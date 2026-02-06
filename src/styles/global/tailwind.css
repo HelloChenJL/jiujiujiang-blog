@@ -1,0 +1,159 @@
+@import './reset.css';
+@import './utils.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --shoka-blue: 122 39% 49%; /* 调整为绿色系 HSL */
+    --grey-4: 0 0% 80%;
+    --color-pink: #4caf50;
+    --color-pink-a3: rgba(76, 175, 80, 0.3);
+
+    --primary: 122 39% 49%; /* 绿色主题色 */
+    --primary-foreground: 210 40% 98%;
+  }
+
+  .dark {
+    --gradient-bg-start: #1b281b; /* 深绿色背景 */
+    --gradient-bg-end: #000;
+    --gradient-bg: linear-gradient(180deg, var(--gradient-bg-start) 10%, var(--gradient-bg-end) 100%);
+    --gradient-pink: linear-gradient(279deg, #4caf50 0%, #81c784 100%);
+    --gradient-header: linear-gradient(-225deg, #1b281b 0, #2e3b2e 100%);
+
+    /* shoka migrate */
+    --box-bg-shadow: rgba(0, 0, 0, 0.5);
+    --grey-1-a5: rgba(34, 34, 34, 0.5);
+
+    --gradient-shoka-button-start: #4caf50;
+    --gradient-shoka-button-end: #8bc34a;
+    --gradient-shoka-button: linear-gradient(
+      to right,
+      var(--gradient-shoka-button-start) 0,
+      var(--gradient-shoka-button-end) 100%
+    );
+    --shoka-blue: 122 39% 49%;
+    --grey-4: 0 0% 40%;
+    --color-pink: #4caf50;
+    --color-pink-a3: rgba(76, 175, 80, 0.3);
+
+    --primary: 122 39% 49%; /* 绿色主题色 */
+    --primary-foreground: 210 40% 98%;
+  }
+}
+
+@font-face {
+  font-family: 'Bear Days';
+  src: url('/fonts/bear-days.woff2') format('woff2');
+  font-display: swap;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+@layer base {
+  html,
+  body {
+    overscroll-behavior-y: none;
+    touch-action: manipulation;
+  }
+  body {
+    min-height: 100dvh;
+    background: linear-gradient(to top, var(--gradient-bg-end) 0, var(--gradient-bg-start) 30%) no-repeat bottom;
+    scroll-behavior: smooth;
+    letter-spacing: 0.02em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:
+      '寒蝉全圆体',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif;
+    letter-spacing: 0.04em;
+  }
+
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  .vertical-scrollbar::-webkit-scrollbar {
+    display: block;
+    width: var(--scrollbar-width, 0.5rem);
+    background: hsl(var(--background)); /* background color */
+  }
+
+  .vertical-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--shoka-blue) / 0.5); /* thumb color */
+    border-radius: 0.5rem;
+  }
+}
+
+/* utils */
+@layer components {
+  .shoka-button-shadow {
+    box-shadow: 0 0 0.75rem var(--color-pink-a3);
+  }
+  .shoka-button-shadow:hover {
+    box-shadow: 0 0 0.75rem var(--color-pink);
+  }
+  #site-header {
+    @apply translate-y-0 text-white transition-transform duration-300;
+    button,
+    a {
+      @apply shadow-text;
+      &::after {
+        transition-duration: 400ms;
+        @apply bg-white;
+      }
+    }
+    .nav-dropdown a {
+      text-shadow: none;
+    }
+  }
+  .clip-path-post-img-left {
+    clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
+  }
+  .clip-path-post-img-right {
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 8% 100%);
+  }
+  .logo-text {
+    font-size: 2rem;
+    text-shadow:
+      3px 4px 2px #060000,
+      -1px -1px 0px #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 0.95;
+    text-align: center;
+    font-family: 'Bear Days', sans-serif;
+    font-weight: 700;
+  }
+}
