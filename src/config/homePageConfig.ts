@@ -5,7 +5,7 @@ export const homePageProfile = {
   avatarUrl: '/img/avatar.jpg',
   avatarAlt: 'User Avatar',
   backgroundUrl: '', // 背景图可以留空，或者放一个你喜欢的图片链接
-  footerText: '© jiujiujiang\'s blog - 2022-2026',
+  footerText: '©jiujiujiang\'s blog - 2022-2026',
 };
 
 export const homePageLinks = {
@@ -14,10 +14,11 @@ export const homePageLinks = {
 
 export async function getHomePageProfile() {
   const { getBackgroundImages } = await import('@lib/backgrounds');
-  const backgroundImages = await getBackgroundImages();
-  const backgroundUrl = backgroundImages.length
-    ? backgroundImages[Math.floor(Math.random() * backgroundImages.length)]
-    : homePageProfile.backgroundUrl;
+  // const backgroundImages = await getBackgroundImages();
+  // const backgroundUrl = backgroundImages.length
+  //   ? backgroundImages[Math.floor(Math.random() * backgroundImages.length)]
+  //   : homePageProfile.backgroundUrl;
+  const backgroundUrl = '/img/backgrounds/background01.jpg';
 
   return { ...homePageProfile, backgroundUrl };
 }
