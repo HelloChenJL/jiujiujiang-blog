@@ -53,13 +53,13 @@ export const blogLayoutConfig: BlogLayoutConfig = {
 };
 
 export const blogSocialConfig: SocialConfig = {
-  github: {
-    url: 'https://github.com/HelloChenJL',
-    label: 'GitHub',
-    iconText: 'GH',
-    iconClass: 'fa-brands fa-github',
-    color: '#191717',
-  },
+  // github: {
+  //   url: 'https://github.com/HelloChenJL',
+  //   label: 'GitHub',
+  //   iconText: 'GH',
+  //   iconClass: 'fa-brands fa-github',
+  //   color: '#191717',
+  // },
   email: {
     url: 'mailto:480536674@qq.com',
     label: 'Email',

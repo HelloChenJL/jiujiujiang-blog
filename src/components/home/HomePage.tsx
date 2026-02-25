@@ -51,15 +51,15 @@ const HomePage = ({ profile = homePageProfile, links = homePageLinks }: HomePage
               {/*  <i className="fa-brands fa-x-twitter text-base" aria-hidden="true" />*/}
               {/*  X*/}
               {/*</a>*/}
-              <a
-                className="flex min-w-[200px] items-center justify-center gap-2 rounded-[25px] bg-gradient-to-r from-[#24292e] to-[#1f2327] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_4px_10px_rgba(36,41,46,0.3)] transition hover:-translate-y-0.5"
-                href={links.githubUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fa-brands fa-github text-base" aria-hidden="true" />
-                GitHub
-              </a>
+              {/*<a*/}
+              {/*  className="flex min-w-[200px] items-center justify-center gap-2 rounded-[25px] bg-gradient-to-r from-[#24292e] to-[#1f2327] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_4px_10px_rgba(36,41,46,0.3)] transition hover:-translate-y-0.5"*/}
+              {/*  href={links.githubUrl}*/}
+              {/*  target="_blank"*/}
+              {/*  rel="noreferrer"*/}
+              {/*>*/}
+              {/*  <i className="fa-brands fa-github text-base" aria-hidden="true" />*/}
+              {/*  GitHub*/}
+              {/*</a>*/}
               <a
                 className="flex min-w-[200px] items-center justify-center gap-2 rounded-[25px] bg-gradient-to-r from-[#4caf50] to-[#81c784] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_4px_10px_rgba(76,175,80,0.3)] transition hover:-translate-y-0.5"
                 href="/blog"
