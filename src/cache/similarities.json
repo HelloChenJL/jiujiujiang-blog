@@ -102,8 +102,8 @@
       "similarity": 0.5
     },
     {
-      "slug": "git回滚分支",
-      "title": "git回滚分支",
+      "slug": "小程序路由参数异常问题",
+      "title": "小程序路由参数异常问题",
       "similarity": 0.498
     }
   ],
@@ -159,6 +159,33 @@
       "slug": "git回滚分支",
       "title": "git回滚分支",
       "similarity": 0.428
+    }
+  ],
+  "小程序路由参数异常问题": [
+    {
+      "slug": "url scheme跳转微信小程序方案",
+      "title": "URL Scheme跳转微信小程序方案",
+      "similarity": 0.581
+    },
+    {
+      "slug": "url link 扫码跳转微信小程序案例",
+      "title": "URL Link 扫码跳转微信小程序案例",
+      "similarity": 0.508
+    },
+    {
+      "slug": "扫码跳转微信小程序",
+      "title": "扫码跳转微信小程序",
+      "similarity": 0.498
+    },
+    {
+      "slug": "nvm安装node失败",
+      "title": "nvm安装node失败",
+      "similarity": 0.457
+    },
+    {
+      "slug": "在线工具",
+      "title": "在线工具",
+      "similarity": 0.43
     }
   ],
   "在线工具": [
@@ -460,6 +487,11 @@
   ],
   "nvm安装node失败": [
     {
+      "slug": "小程序路由参数异常问题",
+      "title": "小程序路由参数异常问题",
+      "similarity": 0.457
+    },
+    {
       "slug": "typora安装激活",
       "title": "Typora安装激活",
       "similarity": 0.426
@@ -478,11 +510,6 @@
       "slug": "vue3 自定义指令 directive",
       "title": "Vue3 自定义指令 directive",
       "similarity": 0.378
-    },
-    {
-      "slug": "vue3-组件之间传参",
-      "title": "Vue3-组件之间传参",
-      "similarity": 0.36
     }
   ],
   "npm 哈希问题处理": [
@@ -1037,6 +1064,11 @@
       "similarity": 0.729
     },
     {
+      "slug": "小程序路由参数异常问题",
+      "title": "小程序路由参数异常问题",
+      "similarity": 0.581
+    },
+    {
       "slug": "https",
       "title": "https",
       "similarity": 0.451
@@ -1045,11 +1077,6 @@
       "slug": "在线工具",
       "title": "在线工具",
       "similarity": 0.449
-    },
-    {
-      "slug": "git回滚分支",
-      "title": "git回滚分支",
-      "similarity": 0.445
     }
   ],
   "url link 扫码跳转微信小程序案例": [
@@ -1064,6 +1091,11 @@
       "similarity": 0.761
     },
     {
+      "slug": "小程序路由参数异常问题",
+      "title": "小程序路由参数异常问题",
+      "similarity": 0.508
+    },
+    {
       "slug": "在线工具",
       "title": "在线工具",
       "similarity": 0.477
@@ -1072,11 +1104,6 @@
       "slug": "浏览器书签同步插件xbrowsersync",
       "title": "浏览器书签同步插件xBrowserSync",
       "similarity": 0.458
-    },
-    {
-      "slug": "uni-app与微信开发者工具开发总结",
-      "title": "uni-app与微信开发者工具开发总结",
-      "similarity": 0.441
     }
   ],
   "typora安装激活": [
